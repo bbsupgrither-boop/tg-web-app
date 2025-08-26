@@ -2,19 +2,75 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Telegram WebApp Test</title>
+  <title>Grither WebApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Telegram WebApp JS -->
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <h1>Привет 👋</h1>
-  <p>Это тестовый Telegram WebApp</p>
+  <!-- Хэдер -->
+  <header class="header">
+    <div class="logo">
+      GRITHER
+      <div class="underline"></div>
+    </div>
+    <div class="username">@username</div>
+    <button class="settings">⚙</button>
+  </header>
 
-  <input type="text" id="username" placeholder="Введите имя">
-  <button onclick="sendData()">Отправить в Telegram</button>
+  <!-- Карточки -->
+  <section class="cards">
+    <div class="card">
+      <img src="arrow.svg" class="arrow" alt="">
+      Безумный фармер
+    </div>
+    <div class="card">
+      <img src="arrow.svg" class="arrow" alt="">
+      Безупречный боец
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Прогресс -->
+  <section class="progress">
+    <h3><img src="arrow.svg" class="arrow" alt=""> Прогресс</h3>
+    <div class="progress-info">
+      <span>XP: 5000</span>
+      <span>lvl 5</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 60%;"></div>
+    </div>
+    <p class="level-text">текущий уровень: ЛЕВ</p>
+  </section>
+
+  <!-- Баттл и Лидерборд -->
+  <section class="battle-leaderboard">
+    <div class="battle">
+      <h3><img src="arrow.svg" class="arrow" alt=""> БАТТЛ</h3>
+      <ul>
+        <li><span class="win">Мирослав</span> vs <span class="lose">Федя</span></li>
+        <li>2. —</li>
+        <li>3. —</li>
+        <li>4. —</li>
+      </ul>
+    </div>
+    <div class="leaderboard">
+      <h3><img src="arrow.svg" class="arrow" alt=""> ЛИДЕРБОРД</h3>
+      <ol>
+        <li>Алексей — 1200 XP</li>
+        <li>Иван — 900 XP</li>
+        <li>Мария — 850 XP</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Навигация -->
+  <nav class="bottom-nav">
+    <a href="#" class="active">🏠 Главная</a>
+    <a href="#">🏆 Достижения</a>
+    <a href="#">📋 Задачи</a>
+    <a href="#">📜 История</a>
+    <a href="#">🛒 Магазин</a>
+  </nav>
 </body>
 </html>
